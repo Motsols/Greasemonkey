@@ -12,8 +12,7 @@
 
     var removeArticleBanner = function() {
         var adPanorama = document.querySelector('.ad.ad--panorama');
-        var article = document.querySelector('.js-article');
-        article.removeChild(adPanorama);
+        adPanorama.style.display = "none";
     };
 
     var removePaywall = function() {
@@ -24,7 +23,7 @@
         payWallOverlay.style.display = 'none';
     };
 
-    var removeAdBlockedOverlay = function(){
+    var removeAdBlockedOverlay = function() {
         var poopface = document.querySelector('#pwOverlay');
 
         poopface.style.display = 'none';
