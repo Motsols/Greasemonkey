@@ -11,22 +11,22 @@
 (function() {
 
     var removeArticleBanner = function() {
-        var adPanorama = document.querySelector('.ad.ad--panorama');
+        var adPanorama = document.querySelector(".ad.ad--panorama");
         adPanorama.style.display = "none";
     };
 
     var removePaywall = function() {
-        var premContent = document.querySelector('.article__premium-content');
-        var payWallOverlay = document.querySelector('.js-paywall.paywall');
+        var premContent = document.querySelector(".article__premium-content");
+        var payWallOverlay = document.querySelector(".js-paywall.paywall");
 
-        premContent.style.display = 'block';
-        payWallOverlay.style.display = 'none';
+        premContent.style.display = "block";
+        payWallOverlay.style.display = "none";
     };
 
     var removeAdBlockedOverlay = function() {
-        var poopface = document.querySelector('#pwOverlay');
+        var poopface = document.querySelector("#pwOverlay");
 
-        poopface.style.display = 'none';
+        poopface.style.display = "none";
     };
 
     removeArticleBanner();
